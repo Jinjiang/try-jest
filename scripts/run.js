@@ -1,7 +1,8 @@
 const jest = require('jest')
 
 jest.runCLI({
-  config: require.resolve('../jest.config.js')
+  rootDir: process.cwd(),
+  config: require.resolve('../config/jest.config.js')
 }, [
   process.cwd()
 ])
