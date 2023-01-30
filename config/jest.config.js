@@ -2,7 +2,7 @@ module.exports = {
   transform: {
     "^.+\\.(css|sass|scss|less|stylus)$": require.resolve('./jest-transform-assets'),
     "^.+\\.(js|jsx|ts|tsx)$": require.resolve('./jest-transform-jtsx'),
-    "^.+\\.vue$": "@vue/vue3-jest"
+    "^.+\\.(vue)$": require.resolve('./jest-transform-vue'),
   },
   testEnvironment: "jsdom",
   testEnvironmentOptions: {
